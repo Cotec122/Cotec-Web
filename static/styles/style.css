@@ -1,3 +1,5 @@
+/*! вся страница */
+
 body {
 	padding: 0;
 	margin: 0;
@@ -6,31 +8,16 @@ body {
 	font-size: 16px;
 	background-color: #272727;
 }
-.container > ul > li > p {
-	margin-left: 1%;
-	font-size: 20px;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	line-height: 26px;
-	color: white;
-}
-.cotecsquad > li {
-	margin-bottom: 40px;
-}
-.cotecsquad > li > a {
-	text-transform: uppercase;
-	text-decoration: none;
-	margin-left: 1%;
-	font-size: 22px;
-	color: #73feb3;
-	letter-spacing: 0.1em;
-}
-.container > ul > li > h2 {
-	margin-left: 1%;
-	margin-top: 1%;
-	font-size: 24px;
+
+/*! Общее */
+
+/* container */
+.container {
+	width: 1170;
+	margin: 0 auto;
 }
 
+/* заголовки */
 h1,
 h2,
 h3,
@@ -43,13 +30,15 @@ h6 {
 	text-transform: uppercase;
 }
 
-.container > h1 {
-	margin-left: 1%;
-	margin-top: 1%;
-	font-size: 28px;
-	margin-bottom: 2%;
+/* ссылки */
+a {
+	text-decoration: none;
+	font-size: 22px;
+	color: #73feb3;
+	letter-spacing: 0.1em;
 }
 
+/* списки */
 ul,
 li {
 	display: block;
@@ -57,15 +46,57 @@ li {
 	margin: 0;
 }
 
-.container {
-	width: 1170;
-	margin: 0 auto;
+/*! HEADER */
+
+/* меню */
+.menu {
+	display: flex;
 }
 
+/* ссылки в списке */
+.menu li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 22px;
+	letter-spacing: 0.1em;
+}
+
+/* список */
+.menu li {
+	margin: 30px;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+/* ссылки в header */
+header a {
+	color: #ededed;
+}
+
+/* header */
 .header {
 	background-color: #333333;
 }
 
+/* gmail */
+.gmail {
+	font-size: 22px;
+	text-decoration: none;
+	margin-left: auto;
+	font-weight: bold;
+	margin-right: 30px;
+}
+
+/* a hot */
+.a-hot {
+	font-weight: bold;
+	color: white;
+}
+
+/* логотип */
 .logo {
 	margin-left: 2%;
 	width: 100px;
@@ -75,39 +106,40 @@ li {
 	margin-right: 2%;
 }
 
-header a {
-	color: #ededed;
-}
+/*! ABOUT */
 
-.menu {
-	display: flex;
-}
-
-.menu li a {
-	text-transform: uppercase;
-	text-decoration: none;
-	font-size: 22px;
-	letter-spacing: 0.1em;
-}
-
-.menu li {
-	margin: 30px;
-}
-
-.gmail {
-	font-size: 22px;
-	text-decoration: none;
-	margin-left: auto;
-	font-weight: bold;
-	margin-right: 30px;
-}
-
-.nav {
-	display: flex;
-	align-items: center;
-}
-
-.a-hot {
-	font-weight: bold;
+/* p в списке */
+.cotecsquad > li > p {
+	margin-left: 1%;
+	font-size: 20px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	line-height: 26px;
 	color: white;
+}
+
+/* список */
+.cotecsquad > li {
+	margin-bottom: 40px;
+}
+
+/* ссылки в списке */
+.cotecsquad > li > a {
+	margin-left: 1%;
+	text-transform: uppercase;
+}
+
+/* заголовки в списке */
+.cotecsquad > li > h2 {
+	margin-left: 1%;
+	margin-top: 1%;
+	font-size: 24px;
+}
+
+/* заголовки в начале section */
+.container > h1 {
+	margin-left: 1%;
+	margin-top: 1%;
+	font-size: 28px;
+	margin-bottom: 2%;
 }
